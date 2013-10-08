@@ -11,3 +11,13 @@ for i in 0...filaS do
 		c[i][j] = 0
 	end
 end
+
+for i in 0...filaS do
+	for j in 0...columnasS do
+		c[i][j]=a[i][j]+b[i][j]
+	end
+end
+
+c.each do |filaS|
+	puts filaS.join(" ")
+end
